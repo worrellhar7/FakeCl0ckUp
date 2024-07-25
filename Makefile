@@ -1,4 +1,8 @@
-include theos/makefiles/common.mk
+ARCHS = arm64 arm64e
+
+TARGET := iphone:clang:16.5:10.3
+
+include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = FakeClockUp
 FakeClockUp_FILES = Tweak.xm
