@@ -10,8 +10,8 @@ FakeClockUp_FRAMEWORKS = UIKit
 ADDITIONAL_OBJCFLAGS = -fobjc-arc
 SUBPROJECTS += fakeclockupprefs
 
-include $(THEOS_MAKE_PATH)/tweak.mk
-include $(THEOS_MAKE_PATH)/aggregate.mk
+include $(THEOS)/makefiles/tweak.mk
+include $(THEOS)/makefiles/aggregate.mk
 
 after-install::
 	install.exec "killall -9 SpringBoard"
